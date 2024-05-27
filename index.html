@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional IT Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <img src="logo.png" alt="Company Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recruitment.html">Recruitment</a></li>
+                    <li><a href="students.html">Students</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="banner">
+        <div class="container">
+            <h1>Welcome to Our Professional IT Services</h1>
+            <p>Delivering Excellence in Major Incident Management and IT Audit and Compliance Services</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h1>Services Offered</h1>
+            <div class="section" id="incident-management">
+                <h2>Major Incident Management Consulting</h2>
+                <ul>
+                    <li onclick="toggleDetails(this)">
+                        Incident Management Process Development and Review
+                        <p class="details">
+                            We develop and review incident management processes to ensure they are effective and efficient. Our approach includes defining roles, responsibilities, and procedures to handle incidents promptly, minimizing impact and restoring normal operations swiftly.
+                        </p>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Incident Response Planning and Execution Support
+                        <p class="details">
+                            We assist in planning and executing incident response strategies tailored to your organization's needs. Our support ensures that your response is swift and coordinated, reducing downtime and mitigating potential damages effectively.
+                        </p>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Root Cause Analysis and Problem Management
+                        <p class="details">
+                            We perform thorough root cause analysis to identify underlying issues causing incidents. Our problem management strategies aim to prevent recurrence, enhancing system stability and reliability for your business.
+                        </p>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Incident Communication Strategies
+                        <p class="details">
+                            We develop clear and consistent communication strategies for incidents, ensuring that all stakeholders are informed and up-to-date. This reduces confusion and enhances collaboration during critical times.
+                        </p>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Training and Workshops for Incident Response Teams
+                        <p class="details">
+                            We provide comprehensive training and workshops for your incident response teams, equipping them with the skills and knowledge to handle incidents efficiently. Our programs are designed to improve response times and outcomes.
+                        </p>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Best Practices Implementation
+                        <p class="details">
+                            We implement industry best practices in incident management to ensure your organization is resilient and prepared. Our best practices are designed to enhance security, reliability, and overall incident handling capabilities.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section" id="audit-compliance">
+                <h2>IT Audit and Compliance Services</h2>
+                <ul>
+                    <li onclick="toggleDetails(this)">
+                        Comprehensive IT Audits
+                        <p class="details">
+                            Our comprehensive IT audits thoroughly assess your IT infrastructure, policies, and procedures. We ensure they meet industry standards and regulatory requirements, enhancing your organization's security and compliance.
+                        </p>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Risk Assessments
+                        <p class="details">
+                            We conduct in-depth risk assessments to identify potential threats to your IT systems. Our detailed reports provide actionable recommendations to mitigate risks, ensuring the safety and reliability of your IT environment.
+                        </p>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Internal Control Evaluations
+                        <p class="details">
+                            We evaluate your internal controls to ensure they effectively protect your IT assets and maintain data integrity. Our evaluations help in strengthening your security posture and operational reliability.
+                        </p>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        IT Policy and Procedure Development
+                        <p class="details">
+                            We assist in developing robust IT policies and procedures that align with your organizational goals and regulatory requirements. Our policies aim to create a secure, compliant, and efficient IT environment.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Professional IT Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
