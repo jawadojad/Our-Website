@@ -38,46 +38,43 @@
     <section id="services">
         <div class="container">
             <h1>Services Offered</h1>
-            <div class="section" id="incident-management">
-                <h2>Major Incident Management Consulting</h2>
-                <ul>
-                    <li onclick="toggleDetails(this)">
-                        Incident Management Process Development and Review
-                        <p class="details">
-                            We develop and review incident management processes to ensure they are effective and efficient. Our approach includes defining roles, responsibilities, and procedures to handle incidents promptly, minimizing impact and restoring normal operations swiftly.
-                        </p>
-                    </li>
-                    <li onclick="toggleDetails(this)">
-                        Incident Response Planning and Execution Support
-                        <p class="details">
-                            We assist in planning and executing incident response strategies tailored to your organization's needs. Our support ensures that your response is swift and coordinated, reducing downtime and mitigating potential damages effectively.
-                        </p>
-                    </li>
-                    <li onclick="toggleDetails(this)">
-                        Root Cause Analysis and Problem Management
-                        <p class="details">
-                            We perform thorough root cause analysis to identify underlying issues causing incidents. Our problem management strategies aim to prevent recurrence, enhancing system stability and reliability for your business.
-                        </p>
-                    </li>
-                    <li onclick="toggleDetails(this)">
-                        Incident Communication Strategies
-                        <p class="details">
-                            We develop clear and consistent communication strategies for incidents, ensuring that all stakeholders are informed and up-to-date. This reduces confusion and enhances collaboration during critical times.
-                        </p>
-                    </li>
-                    <li onclick="toggleDetails(this)">
-                        Training and Workshops for Incident Response Teams
-                        <p class="details">
-                            We provide comprehensive training and workshops for your incident response teams, equipping them with the skills and knowledge to handle incidents efficiently. Our programs are designed to improve response times and outcomes.
-                        </p>
-                    </li>
-                    <li onclick="toggleDetails(this)">
-                        Best Practices Implementation
-                        <p class="details">
-                            We implement industry best practices in incident management to ensure your organization is resilient and prepared. Our best practices are designed to enhance security, reliability, and overall incident handling capabilities.
-                        </p>
-                    </li>
-                </ul>
+            <div class="services-grid">
+                <div class="service-box">
+                    <h2>Incident Management Process Development and Review</h2>
+                    <p class="service-details">
+                        We develop and review incident management processes to ensure they are effective and efficient. Our approach includes defining roles, responsibilities, and procedures to handle incidents promptly, minimizing impact and restoring normal operations swiftly.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <h2>Incident Response Planning and Execution Support</h2>
+                    <p class="service-details">
+                        We assist in planning and executing incident response strategies tailored to your organization's needs. Our support ensures that your response is swift and coordinated, reducing downtime and mitigating potential damages effectively.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <h2>Root Cause Analysis and Problem Management</h2>
+                    <p class="service-details">
+                        We perform thorough root cause analysis to identify underlying issues causing incidents. Our problem management strategies aim to prevent recurrence, enhancing system stability and reliability for your business.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <h2>Incident Communication Strategies</h2>
+                    <p class="service-details">
+                        We develop clear and consistent communication strategies for incidents, ensuring that all stakeholders are informed and up-to-date. This reduces confusion and enhances collaboration during critical times.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <h2>Training and Workshops for Incident Response Teams</h2>
+                    <p class="service-details">
+                        We provide comprehensive training and workshops for your incident response teams, equipping them with the skills and knowledge to handle incidents efficiently. Our programs are designed to improve response times and outcomes.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <h2>Best Practices Implementation</h2>
+                    <p class="service-details">
+                        We implement industry best practices in incident management to ensure your organization is resilient and prepared. Our best practices are designed to enhance security, reliability, and overall incident handling capabilities.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -86,9 +83,14 @@
         <div class="container">
             <h2>Contact Us</h2>
             <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>

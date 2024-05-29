@@ -105,6 +105,7 @@ header .search-bar input[type="text"] {
 
 #banner img {
     width: 100%;
+    height: 70%; /* Decrease height to 70% */
     border-radius: 15px; /* Curved corners */
 }
 
@@ -112,12 +113,74 @@ header .search-bar input[type="text"] {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for the "Welcome to Advance Services" text */
 }
 
-#services, #contact {
+#services {
     margin: 40px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-box {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.service-box h2 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Space between name and details */
+    color: #006d5b; /* Dark teal-ish color */
+}
+
+.service-details {
+    color: #333;
 }
 
 section h1, section h2, section h3 {
     color: #006d5b; /* Dark teal-ish color */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin: 10px 0 5px;
+    color: #006d5b;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact-form textarea {
+    height: 100px;
+}
+
+#contact-form button {
+    background: #006d5b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact-form button:hover {
+    background: #004d40;
 }
 
 ul {
@@ -148,28 +211,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-#services .section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#services .section h3 {
-    flex: 1 1 30%;
-    margin: 0 10px;
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-#services .section h3:hover {
-    transform: scale(1.05);
-    background-color: #e0f7fa; /* Highlight color on hover */
-}
-
-.black-text {
-    color: #000; /* Black color */
 }
