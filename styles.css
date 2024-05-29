@@ -4,6 +4,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0; /* Light grey background */
 }
 
 .container {
@@ -13,14 +14,24 @@ body {
 }
 
 header {
-    background: #0056b3;
+    background: #006d5b; /* Dark teal-ish color */
     color: #fff;
     padding: 10px 0;
+    position: relative;
 }
 
 header .logo {
     float: left;
     margin-left: 20px;
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+}
+
+header .company-name {
+    float: left;
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 50px;
 }
 
 header nav {
@@ -36,7 +47,7 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin-left: 10px;
+    margin-left: 20px; /* Adjust spacing */
 }
 
 header nav ul li a {
@@ -52,10 +63,13 @@ header:after {
 }
 
 #banner {
-    background: url('banner.jpg') no-repeat center center/cover;
-    color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding: 20px 0;
+}
+
+#banner img {
+    width: 100%;
+    border-radius: 15px; /* Curved corners */
 }
 
 #services, #contact {
@@ -63,7 +77,7 @@ header:after {
 }
 
 section h1, section h2, section h3 {
-    color: #0056b3;
+    color: #006d5b; /* Dark teal-ish color */
 }
 
 ul {
@@ -85,7 +99,7 @@ li {
 }
 
 footer {
-    background: #0056b3;
+    background: #006d5b; /* Dark teal-ish color */
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -93,4 +107,28 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+#services .section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#services .section h3 {
+    flex: 1 1 30%;
+    margin: 0 10px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#services .section h3:hover {
+    transform: scale(1.05);
+    background-color: #e0f7fa; /* Highlight color on hover */
+}
+
+.black-text {
+    color: #000; /* Black color */
 }
