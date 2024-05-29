@@ -16,50 +16,86 @@ body {
 header {
     background: #006d5b; /* Dark teal-ish color */
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0; /* Increase padding to increase header height */
     position: relative;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space out items */
+    background: linear-gradient(to bottom, #006d5b, #006d5b 95%, #f0f0f0 100%); /* Adjusted gradient blend */
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px; /* Adjust to align with top */
+    left: 20px; /* Adjust to align with left */
 }
 
 header .logo {
-    float: left;
-    margin-left: 20px;
     width: 50px; /* Adjust the size as needed */
     height: 50px; /* Adjust the size as needed */
+    border-radius: 50%; /* Circular shape */
+    margin-right: 10px; /* Space between logo and company name */
 }
 
 header .company-name {
-    float: left;
-    margin-left: 10px;
     font-size: 24px;
-    line-height: 50px;
+    color: #d3d3d3; /* Light grey color */
+    text-decoration: none; /* Remove underline */
 }
 
 header nav {
-    float: right;
-    margin-right: 20px;
+    position: absolute;
+    top: 20px; /* Adjust to align with top */
+    right: 150px; /* Move navigation links towards center */
+    display: flex;
+    align-items: center;
 }
 
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center; /* Center vertically */
 }
 
 header nav ul li {
-    display: inline;
-    margin-left: 20px; /* Adjust spacing */
+    margin-left: 30px; /* Increase spacing */
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #d3d3d3; /* Light grey color */
     text-decoration: none;
     font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Light shadow */
 }
 
-header:after {
-    content: "";
-    display: table;
-    clear: both;
+header .search-icon {
+    position: absolute;
+    top: 20px; /* Align with top */
+    right: 20px; /* Position at the right end */
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: url('search-icon.png') no-repeat center;
+    background-size: cover;
+}
+
+header .search-bar {
+    display: none;
+    position: absolute;
+    top: 20px; /* Align with top */
+    right: 60px; /* Position to the left of the icon */
+}
+
+header .search-bar input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 150px; /* Smaller width */
 }
 
 #banner {
@@ -70,6 +106,10 @@ header:after {
 #banner img {
     width: 100%;
     border-radius: 15px; /* Curved corners */
+}
+
+#banner h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for the "Welcome to Advance Services" text */
 }
 
 #services, #contact {
@@ -103,6 +143,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    background: linear-gradient(to top, #006d5b, #006d5b 95%, #f0f0f0 100%); /* Gradient blend for footer */
 }
 
 footer p {
